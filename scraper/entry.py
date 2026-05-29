@@ -61,15 +61,16 @@ def get_entry(race_id: str) -> Dict:
                 try:
                     entry = {}
 
-                    # 枠番・馬番
-                    waku = row.select_one(".Waku")
+                    # 枠番 (class="Waku1 Txt_C" など番号付き)
+                    waku = row.select_one("td[class*='Waku']")
                     entry["gate_number"] = safe_int(safe_text(waku)) if waku else None
 
-                    umaban = row.select_one(".Umaban")
+                    # 馬番 (class="Umaban1 Txt_C" など番号付き)
+                    umaban = row.select_one("td[class*='Umaban']")
                     entry["horse_number"] = safe_int(safe_text(umaban)) if umaban else None
 
-                    # 馬情報
-                    horse_td = row.select_one(".HorseName")
+                    # 馬情報 (td.HorseInfo > span.HorseName > a)
+                    horse_td = row.select_one(".HorseInfo") or row.select_one(".HorseName")
                     if horse_td:
                         horse_a = horse_td.select_one("a")
                         entry["horse_name"] = safe_text(horse_a)
@@ -77,16 +78,18 @@ def get_entry(race_id: str) -> Dict:
                         if "/horse/" in href:
                             entry["horse_id"] = href.rstrip("/").split("/")[-1]
 
-                    # 性齢
-                    sex_age = row.select_one(".KisoInfo")
+                    # 性齢 (class="Barei Txt_C")
+                    sex_age = row.select_one(".Barei") or row.select_one(".KisoInfo")
                     if sex_age:
                         text = safe_text(sex_age)
                         entry["sex"] = text[0] if text else ""
                         entry["age"] = safe_int(text[1:]) if len(text) > 1 else None
 
-                    # 斤量
-                    kinryo = row.select_one(".Kinryo")
-                    entry["weight_carried"] = safe_float(safe_text(kinryo)) if kinryo else None
+                    # 斤量 (Barei の次の td)
+                    barei_td = row.select_one(".Barei")
+                    if barei_td:
+                        kinryo_td = barei_td.find_next_sibling("td")
+                        entry["weight_carried"] = safe_float(safe_text(kinryo_td))
 
                     # 騎手
                     jockey_td = row.select_one(".Jockey")
@@ -103,12 +106,12 @@ def get_entry(race_id: str) -> Dict:
                             entry["horse_weight"] = int(m.group(1))
                             entry["horse_weight_diff"] = int(m.group(2))
 
-                    # オッズ（単勝）
-                    odds_td = row.select_one(".Odds")
+                    # オッズ（単勝） (class="Txt_R Popular")
+                    odds_td = row.select_one("td.Txt_R.Popular") or row.select_one("td.Popular")
                     entry["odds"] = safe_float(safe_text(odds_td)) if odds_td else None
 
-                    # 人気
-                    pop_td = row.select_one(".Popular")
+                    # 人気 (class="Popular Popular_Ninki Txt_C")
+                    pop_td = row.select_one("td.Popular_Ninki") or row.select_one("td.Popular.Txt_C")
                     entry["popularity"] = safe_int(safe_text(pop_td)) if pop_td else None
 
                     if entry.get("horse_number"):

@@ -31,37 +31,57 @@ def get_result(race_id: str) -> Dict:
             for row in table.select("tr.HorseList"):
                 try:
                     r = {}
-                    # 着順
-                    pos_td = row.select_one(".Rank")
+                    # 着順 (class="Result_Num")
+                    pos_td = row.select_one(".Result_Num") or row.select_one(".Rank")
                     pos_text = safe_text(pos_td)
                     r["finish_position"] = safe_int(pos_text) if pos_text.isdigit() else None
 
-                    # 枠・馬番
-                    r["gate_number"] = safe_int(safe_text(row.select_one(".Waku")))
-                    r["horse_number"] = safe_int(safe_text(row.select_one(".Umaban")))
+                    # 枠番 (class="Num Waku7" など)
+                    gate_td = row.select_one("td[class*='Waku']")
+                    r["gate_number"] = safe_int(safe_text(gate_td))
 
-                    # 馬名・馬ID
-                    horse_a = row.select_one(".Horse_Name a") or row.select_one(".HorseName a")
-                    if horse_a:
-                        r["horse_name"] = safe_text(horse_a)
-                        href = horse_a.get("href", "")
-                        if "/horse/" in href:
-                            r["horse_id"] = href.rstrip("/").split("/")[-1]
+                    # 馬番 (class="Num Txt_C")
+                    num_tds = row.select("td.Num.Txt_C")
+                    r["horse_number"] = safe_int(safe_text(num_tds[0])) if num_tds else None
 
-                    # タイム
-                    time_td = row.select_one(".Time")
-                    if time_td:
-                        time_text = safe_text(time_td)
+                    # 馬名・馬ID (td.Horse_Info > a)
+                    horse_td = row.select_one(".Horse_Info") or row.select_one(".Horse_Name")
+                    if horse_td:
+                        horse_a = horse_td.select_one("a")
+                        if horse_a:
+                            r["horse_name"] = safe_text(horse_a)
+                            href = horse_a.get("href", "")
+                            if "/horse/" in href:
+                                r["horse_id"] = href.rstrip("/").split("/")[-1]
+
+                    # 斤量 (class="Jockey_Info")
+                    r["weight_carried"] = safe_float(safe_text(row.select_one(".Jockey_Info")))
+
+                    # 騎手
+                    jockey_td = row.select_one(".Jockey")
+                    r["jockey"] = safe_text(jockey_td.select_one("a") or jockey_td) if jockey_td else None
+
+                    # タイム (最初の .Time)
+                    time_tds = row.select(".Time")
+                    if time_tds:
+                        time_text = safe_text(time_tds[0])
                         m = re.match(r"(\d+):(\d+\.\d+)", time_text)
                         if m:
                             r["finish_time"] = int(m.group(1)) * 60 + float(m.group(2))
 
-                    # 着差
-                    r["margin"] = safe_text(row.select_one(".Margin"))
+                    # 着差 (2番目の .Time)
+                    r["margin"] = safe_text(time_tds[1]) if len(time_tds) > 1 else None
 
-                    # 騎手・斤量
-                    r["jockey"] = safe_text(row.select_one(".Jockey a") or row.select_one(".Jockey"))
-                    r["weight_carried"] = safe_float(safe_text(row.select_one(".Kinryo")))
+                    # 人気 (class="Odds BgOrange Txt_C")
+                    pop_td = row.select_one("td.BgOrange.Txt_C") or row.select_one("td.Odds.BgOrange")
+                    r["popularity"] = safe_int(safe_text(pop_td))
+
+                    # オッズ (class="Odds Txt_R")
+                    odds_td = row.select_one("td.Odds.Txt_R") or row.select_one("td.Txt_R.Odds")
+                    r["odds"] = safe_float(safe_text(odds_td))
+
+                    # 上がり3F (class="Time BgOrange")
+                    r["last_3f"] = safe_float(safe_text(row.select_one("td.Time.BgOrange")))
 
                     # 馬体重
                     weight_td = row.select_one(".Weight")
@@ -71,13 +91,6 @@ def get_result(race_id: str) -> Dict:
                         if m2:
                             r["horse_weight"] = int(m2.group(1))
                             r["horse_weight_diff"] = int(m2.group(2))
-
-                    # 上がり3F
-                    r["last_3f"] = safe_float(safe_text(row.select_one(".Last3F")))
-
-                    # オッズ・人気
-                    r["odds"] = safe_float(safe_text(row.select_one(".Odds")))
-                    r["popularity"] = safe_int(safe_text(row.select_one(".Popular")))
 
                     if r.get("horse_number") is not None:
                         data["results"].append(r)
