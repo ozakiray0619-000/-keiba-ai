@@ -3,6 +3,7 @@ __pycache__/
 *.pyc
 *.pyo
 keiba.db
+*.db-journal
 logs/
 model/saved_models/
 frontend/node_modules/
