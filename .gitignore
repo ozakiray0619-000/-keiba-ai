@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+keiba.db
+logs/
+model/saved_models/
+frontend/node_modules/
+frontend/dist/
+.env
