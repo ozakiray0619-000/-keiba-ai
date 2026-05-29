@@ -1,0 +1,161 @@
+2026-05-29 12:37:27,925 [INFO] __main__: === 収集開始: 2026-05-29 ===
+2026-05-29 12:37:27,931 [INFO] scraper.race_list: レース一覧取得: https://race.netkeiba.com/top/race_list.html?kaisai_date=20260529
+2026-05-29 12:37:31,343 [INFO] scraper.race_list: 2026-05-29: 0レース取得
+2026-05-29 12:37:31,344 [WARNING] __main__: 本日のレースが見つかりません
+2026-05-29 12:40:02,527 [INFO] __main__: === 収集開始: 2026-05-25 ===
+2026-05-29 12:40:02,543 [INFO] scraper.race_list: レース一覧取得: https://race.netkeiba.com/top/race_list.html?kaisai_date=20260525
+2026-05-29 12:40:05,459 [INFO] scraper.race_list: 2026-05-25: 0レース取得
+2026-05-29 12:40:05,459 [WARNING] __main__: 本日のレースが見つかりません
+2026-05-29 12:44:44,207 [INFO] __main__: === 収集開始: 2026-05-25 ===
+2026-05-29 12:44:44,221 [INFO] scraper.race_list: レース一覧取得: https://race.netkeiba.com/top/race_list.html?kaisai_date=20260525
+2026-05-29 12:44:47,049 [INFO] scraper.race_list: 2026-05-25: 0レース取得
+2026-05-29 12:44:47,049 [WARNING] __main__: 本日のレースが見つかりません
+2026-05-29 12:49:41,489 [INFO] __main__: === 収集開始: 2026-05-24 ===
+2026-05-29 12:49:41,512 [INFO] scraper.race_list: 開催情報取得: https://race.netkeiba.com/top/race_list_sub.html?kaisai_date=20260524
+2026-05-29 12:49:44,663 [INFO] scraper.race_list: 2026-05-24: 36レース取得
+2026-05-29 12:49:44,664 [INFO] __main__: 36レース発見
+2026-05-29 12:49:44,665 [INFO] __main__: 処理中: 小倉 1R (202605021001)
+2026-05-29 12:49:44,665 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202605021001
+2026-05-29 12:49:47,838 [INFO] scraper.entry: race_id=202605021001: 0頭取得
+2026-05-29 12:49:47,887 [INFO] __main__:   → 保存完了: 3歳未勝利
+2026-05-29 12:49:47,889 [INFO] __main__: 処理中: 小倉 2R (202605021002)
+2026-05-29 12:49:47,890 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202605021002
+2026-05-29 12:49:51,455 [INFO] scraper.entry: race_id=202605021002: 0頭取得
+2026-05-29 12:49:51,466 [INFO] __main__:   → 保存完了: 3歳未勝利
+2026-05-29 12:49:51,467 [INFO] __main__: 処理中: 小倉 3R (202605021003)
+2026-05-29 12:49:51,471 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202605021003
+2026-05-29 12:49:55,058 [INFO] scraper.entry: race_id=202605021003: 0頭取得
+2026-05-29 12:49:55,074 [INFO] __main__:   → 保存完了: 3歳未勝利
+2026-05-29 12:49:55,075 [INFO] __main__: 処理中: 小倉 4R (202605021004)
+2026-05-29 12:49:55,075 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202605021004
+2026-05-29 12:49:58,169 [INFO] scraper.entry: race_id=202605021004: 0頭取得
+2026-05-29 12:49:58,193 [INFO] __main__:   → 保存完了: 3歳未勝利
+2026-05-29 12:49:58,193 [INFO] __main__: 処理中: 小倉 5R (202605021005)
+2026-05-29 12:49:58,194 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202605021005
+2026-05-29 12:50:01,424 [INFO] scraper.entry: race_id=202605021005: 0頭取得
+2026-05-29 12:50:01,446 [INFO] __main__:   → 保存完了: 3歳未勝利
+2026-05-29 12:50:01,447 [INFO] __main__: 処理中: 小倉 6R (202605021006)
+2026-05-29 12:50:01,447 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202605021006
+2026-05-29 12:50:05,037 [INFO] scraper.entry: race_id=202605021006: 0頭取得
+2026-05-29 12:50:05,057 [INFO] __main__:   → 保存完了: 3歳1勝クラス
+2026-05-29 12:50:05,058 [INFO] __main__: 処理中: 小倉 7R (202605021007)
+2026-05-29 12:50:05,058 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202605021007
+2026-05-29 12:50:07,907 [INFO] scraper.entry: race_id=202605021007: 0頭取得
+2026-05-29 12:50:07,932 [INFO] __main__:   → 保存完了: 4歳以上1勝クラス
+2026-05-29 12:50:07,932 [INFO] __main__: 処理中: 小倉 8R (202605021008)
+2026-05-29 12:50:07,933 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202605021008
+2026-05-29 12:50:11,469 [INFO] scraper.entry: race_id=202605021008: 0頭取得
+2026-05-29 12:50:11,482 [INFO] __main__:   → 保存完了: 三峰山特別
+2026-05-29 12:50:11,483 [INFO] __main__: 処理中: 小倉 9R (202605021009)
+2026-05-29 12:50:11,484 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202605021009
+2026-05-29 12:50:14,311 [INFO] scraper.entry: race_id=202605021009: 0頭取得
+2026-05-29 12:50:14,324 [INFO] __main__:   → 保存完了: 国分寺特別
+2026-05-29 12:50:14,324 [INFO] __main__: 処理中: 小倉 10R (202605021010)
+2026-05-29 12:50:14,325 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202605021010
+2026-05-29 12:50:18,463 [INFO] scraper.entry: race_id=202605021010: 0頭取得
+2026-05-29 12:50:18,491 [INFO] __main__:   → 保存完了: フリーウェイS
+2026-05-29 12:50:18,491 [INFO] __main__: 処理中: 小倉 11R (202605021011)
+2026-05-29 12:50:18,491 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202605021011
+2026-05-29 12:50:21,876 [INFO] scraper.entry: race_id=202605021011: 0頭取得
+2026-05-29 12:50:21,904 [INFO] __main__:   → 保存完了: オークス
+2026-05-29 12:50:21,905 [INFO] __main__: 処理中: 小倉 12R (202605021012)
+2026-05-29 12:50:21,905 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202605021012
+2026-05-29 12:50:25,479 [INFO] scraper.entry: race_id=202605021012: 0頭取得
+2026-05-29 12:50:25,508 [INFO] __main__:   → 保存完了: 丹沢S
+2026-05-29 12:50:25,509 [INFO] __main__: 処理中: 小倉 1R (202608031001)
+2026-05-29 12:50:25,509 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202608031001
+2026-05-29 12:50:29,578 [INFO] scraper.entry: race_id=202608031001: 0頭取得
+2026-05-29 12:50:29,589 [INFO] __main__:   → 保存完了: 3歳未勝利
+2026-05-29 12:50:29,589 [INFO] __main__: 処理中: 小倉 2R (202608031002)
+2026-05-29 12:50:29,590 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202608031002
+2026-05-29 12:50:33,163 [INFO] scraper.entry: race_id=202608031002: 0頭取得
+2026-05-29 12:50:33,187 [INFO] __main__:   → 保存完了: 3歳未勝利
+2026-05-29 12:50:33,188 [INFO] __main__: 処理中: 小倉 3R (202608031003)
+2026-05-29 12:50:33,189 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202608031003
+2026-05-29 12:50:36,199 [INFO] scraper.entry: race_id=202608031003: 0頭取得
+2026-05-29 12:50:36,229 [INFO] __main__:   → 保存完了: 3歳未勝利
+2026-05-29 12:50:36,229 [INFO] __main__: 処理中: 小倉 4R (202608031004)
+2026-05-29 12:50:36,230 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202608031004
+2026-05-29 12:50:40,004 [INFO] scraper.entry: race_id=202608031004: 0頭取得
+2026-05-29 12:50:40,014 [INFO] __main__:   → 保存完了: 3歳未勝利
+2026-05-29 12:50:40,015 [INFO] __main__: 処理中: 小倉 5R (202608031005)
+2026-05-29 12:50:40,015 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202608031005
+2026-05-29 12:50:44,234 [INFO] scraper.entry: race_id=202608031005: 0頭取得
+2026-05-29 12:50:44,246 [INFO] __main__:   → 保存完了: 3歳1勝クラス
+2026-05-29 12:50:44,247 [INFO] __main__: 処理中: 小倉 6R (202608031006)
+2026-05-29 12:50:44,247 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202608031006
+2026-05-29 12:50:48,572 [INFO] scraper.entry: race_id=202608031006: 0頭取得
+2026-05-29 12:50:48,586 [INFO] __main__:   → 保存完了: 3歳1勝クラス
+2026-05-29 12:50:48,587 [INFO] __main__: 処理中: 小倉 7R (202608031007)
+2026-05-29 12:50:48,587 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202608031007
+2026-05-29 12:50:51,538 [INFO] scraper.entry: race_id=202608031007: 0頭取得
+2026-05-29 12:50:51,549 [INFO] __main__:   → 保存完了: 4歳以上1勝クラス
+2026-05-29 12:50:51,550 [INFO] __main__: 処理中: 小倉 8R (202608031008)
+2026-05-29 12:50:51,550 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202608031008
+2026-05-29 12:50:55,534 [INFO] scraper.entry: race_id=202608031008: 0頭取得
+2026-05-29 12:50:55,546 [INFO] __main__:   → 保存完了: 4歳以上2勝クラス
+2026-05-29 12:50:55,547 [INFO] __main__: 処理中: 小倉 9R (202608031009)
+2026-05-29 12:50:55,547 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202608031009
+2026-05-29 12:50:58,265 [INFO] scraper.entry: race_id=202608031009: 0頭取得
+2026-05-29 12:50:58,275 [INFO] __main__:   → 保存完了: 聖護院特別
+2026-05-29 12:50:58,276 [INFO] __main__: 処理中: 小倉 10R (202608031010)
+2026-05-29 12:50:58,277 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202608031010
+2026-05-29 12:51:00,650 [INFO] scraper.entry: race_id=202608031010: 0頭取得
+2026-05-29 12:51:00,659 [INFO] __main__:   → 保存完了: 高瀬川S
+2026-05-29 12:51:00,659 [INFO] __main__: 処理中: 小倉 11R (202608031011)
+2026-05-29 12:51:00,660 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202608031011
+2026-05-29 12:51:03,837 [INFO] scraper.entry: race_id=202608031011: 0頭取得
+2026-05-29 12:51:03,846 [INFO] __main__:   → 保存完了: 都大路S
+2026-05-29 12:51:03,847 [INFO] __main__: 処理中: 小倉 12R (202608031012)
+2026-05-29 12:51:03,847 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202608031012
+2026-05-29 12:51:07,894 [INFO] scraper.entry: race_id=202608031012: 0頭取得
+2026-05-29 12:51:07,905 [INFO] __main__:   → 保存完了: 4歳以上1勝クラス
+2026-05-29 12:51:07,905 [INFO] __main__: 処理中: 京都 1R (202604010801)
+2026-05-29 12:51:07,906 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202604010801
+2026-05-29 12:51:10,890 [INFO] scraper.entry: race_id=202604010801: 0頭取得
+2026-05-29 12:51:10,900 [INFO] __main__:   → 保存完了: 3歳未勝利
+2026-05-29 12:51:10,900 [INFO] __main__: 処理中: 京都 2R (202604010802)
+2026-05-29 12:51:10,901 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202604010802
+2026-05-29 12:51:15,008 [INFO] scraper.entry: race_id=202604010802: 0頭取得
+2026-05-29 12:51:15,017 [INFO] __main__:   → 保存完了: 3歳未勝利
+2026-05-29 12:51:15,017 [INFO] __main__: 処理中: 京都 3R (202604010803)
+2026-05-29 12:51:15,017 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202604010803
+2026-05-29 12:51:17,518 [INFO] scraper.entry: race_id=202604010803: 0頭取得
+2026-05-29 12:51:17,530 [INFO] __main__:   → 保存完了: 3歳未勝利
+2026-05-29 12:51:17,530 [INFO] __main__: 処理中: 京都 4R (202604010804)
+2026-05-29 12:51:17,531 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202604010804
+2026-05-29 12:51:20,305 [INFO] scraper.entry: race_id=202604010804: 0頭取得
+2026-05-29 12:51:20,314 [INFO] __main__:   → 保存完了: 4歳以上障害未勝利
+2026-05-29 12:51:20,315 [INFO] __main__: 処理中: 京都 5R (202604010805)
+2026-05-29 12:51:20,315 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202604010805
+2026-05-29 12:51:23,371 [INFO] scraper.entry: race_id=202604010805: 0頭取得
+2026-05-29 12:51:23,380 [INFO] __main__:   → 保存完了: 3歳未勝利
+2026-05-29 12:51:23,380 [INFO] __main__: 処理中: 京都 6R (202604010806)
+2026-05-29 12:51:23,380 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202604010806
+2026-05-29 12:51:25,855 [INFO] scraper.entry: race_id=202604010806: 0頭取得
+2026-05-29 12:51:25,865 [INFO] __main__:   → 保存完了: 3歳未勝利
+2026-05-29 12:51:25,865 [INFO] __main__: 処理中: 京都 7R (202604010807)
+2026-05-29 12:51:25,865 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202604010807
+2026-05-29 12:51:28,574 [INFO] scraper.entry: race_id=202604010807: 0頭取得
+2026-05-29 12:51:28,583 [INFO] __main__:   → 保存完了: 4歳以上1勝クラス
+2026-05-29 12:51:28,584 [INFO] __main__: 処理中: 京都 8R (202604010808)
+2026-05-29 12:51:28,584 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202604010808
+2026-05-29 12:51:31,803 [INFO] scraper.entry: race_id=202604010808: 0頭取得
+2026-05-29 12:51:31,812 [INFO] __main__:   → 保存完了: 4歳以上1勝クラス
+2026-05-29 12:51:31,813 [INFO] __main__: 処理中: 京都 9R (202604010809)
+2026-05-29 12:51:31,813 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202604010809
+2026-05-29 12:51:34,583 [INFO] scraper.entry: race_id=202604010809: 0頭取得
+2026-05-29 12:51:34,597 [INFO] __main__:   → 保存完了: 二王子特別
+2026-05-29 12:51:34,598 [INFO] __main__: 処理中: 京都 10R (202604010810)
+2026-05-29 12:51:34,598 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202604010810
+2026-05-29 12:51:38,045 [INFO] scraper.entry: race_id=202604010810: 0頭取得
+2026-05-29 12:51:38,053 [INFO] __main__:   → 保存完了: 火打山特別
+2026-05-29 12:51:38,054 [INFO] __main__: 処理中: 京都 11R (202604010811)
+2026-05-29 12:51:38,054 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202604010811
+2026-05-29 12:51:40,989 [INFO] scraper.entry: race_id=202604010811: 0頭取得
+2026-05-29 12:51:40,997 [INFO] __main__:   → 保存完了: 韋駄天S
+2026-05-29 12:51:40,998 [INFO] __main__: 処理中: 京都 12R (202604010812)
+2026-05-29 12:51:40,998 [INFO] scraper.entry: 出馬表取得: https://race.netkeiba.com/race/shutuba.html?race_id=202604010812
+2026-05-29 12:51:43,919 [INFO] scraper.entry: race_id=202604010812: 0頭取得
+2026-05-29 12:51:43,928 [INFO] __main__:   → 保存完了: 4歳以上1勝クラス
+2026-05-29 12:51:43,928 [INFO] __main__: === 収集完了: 2026-05-24 ===

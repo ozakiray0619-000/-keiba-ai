@@ -1,0 +1,18 @@
+# 競馬予測アプリ Cursor Rules
+
+## プロジェクト概要
+- netkeibaから競馬データを収集してLightGBMで予測するWebアプリ
+- バックエンド: Python (FastAPI, SQLAlchemy, LightGBM)
+- フロントエンド: React + Vite + TailwindCSS
+- DB: SQLite (keiba.db)
+
+## コーディング規約
+- Python: 型ヒントを必ず書く
+- スクレイピングは必ず1.5秒以上のウェイトを入れること
+- DBはscraper側で直接操作しない（pipelineを経由）
+- モデルの特徴量カラムはfeatures.py の FEATURE_COLUMNS で一元管理
+
+## 注意事項
+- netkeibaのHTMLが変わったら scraper/ を修正する
+- モデルのバージョンはpredict.py の MODEL_VERSION で管理
+- 本番前に必ずバックテスト（train.py）で精度を確認

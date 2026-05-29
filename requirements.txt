@@ -1,0 +1,16 @@
+requests
+beautifulsoup4
+selenium
+webdriver-manager
+pandas
+numpy
+lightgbm
+scikit-learn
+sqlalchemy
+alembic
+schedule
+python-dotenv
+lxml
+fastapi
+uvicorn
+httpx
