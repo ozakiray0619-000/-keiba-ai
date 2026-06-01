@@ -129,7 +129,7 @@ def init_db(db_path: str = "keiba.db"):
     """DBを初期化してテーブルを作成"""
     engine = create_engine(f"sqlite:///{db_path}", echo=False)
     Base.metadata.create_all(engine)
-    print(f"✅ DB初期化完了: {db_path}")
+    print(f"DB初期化完了: {db_path}")
     return engine
 
 

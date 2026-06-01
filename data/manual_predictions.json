@@ -1,0 +1,96 @@
+{
+  "description": "アプリ予測結果と実際の着順の照合ログ。精度測定の元データ。",
+  "records": [
+    {
+      "id": "pred_2026-06-01_001",
+      "logged_at": "2026-06-01",
+      "race": {
+        "date": null,
+        "venue": null,
+        "race_number": null,
+        "netkeiba_race_id": null,
+        "note": "レース特定情報は後で追記"
+      },
+      "predictions": {
+        "trifecta": [
+          {
+            "type": "3連単",
+            "points": 1,
+            "combos": [
+              [
+                17,
+                11,
+                1
+              ]
+            ]
+          }
+        ],
+        "exacta": [
+          {
+            "type": "馬単",
+            "points": 2,
+            "combos": [
+              [
+                11,
+                17
+              ],
+              [
+                17,
+                11
+              ]
+            ]
+          }
+        ],
+        "place": [
+          {
+            "type": "複勝",
+            "points": 1,
+            "horses": [
+              {
+                "number": 1,
+                "name": "ライヒスアドラー"
+              }
+            ]
+          }
+        ],
+        "trio_formation": [
+          {
+            "type": "3連複フォーメーション",
+            "points": 8,
+            "first": [
+              17,
+              11,
+              14
+            ],
+            "second": [
+              11,
+              14
+            ],
+            "third": [
+              1,
+              6,
+              7,
+              9,
+              11,
+              13,
+              14,
+              15,
+              16,
+              17
+            ]
+          }
+        ]
+      },
+      "actual_result": {
+        "finish_order": null,
+        "note": "実際の着順が判明したらここに記入（例: [17, 11, 1, ...]）"
+      },
+      "evaluation": {
+        "trifecta_hit": null,
+        "exacta_hit": null,
+        "place_hit": null,
+        "trio_hit": null
+      }
+    }
+  ]
+}

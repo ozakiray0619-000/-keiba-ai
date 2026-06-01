@@ -148,7 +148,7 @@ def main():
     finally:
         session.close()
 
-    logger.info("✅ 学習完了")
+    logger.info("学習完了")
 
 
 if __name__ == "__main__":

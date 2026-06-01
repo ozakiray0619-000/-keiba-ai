@@ -5,6 +5,7 @@ __pycache__/
 keiba.db
 *.db-journal
 logs/
+*.log
 model/saved_models/
 frontend/node_modules/
 frontend/dist/
